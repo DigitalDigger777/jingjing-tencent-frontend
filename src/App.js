@@ -63,7 +63,7 @@ class App extends Component {
         //alert(this.state.sim);
         //alert(this.state.imei);
         //alert(minutes);
-        axios.post('http://jingjing.fenglinfl.com/public/index.php/mosquitto/relay/enable?deviceId=174&timeInterval=2&timeUnits=m', {
+        axios.post('./index.php', {
             imei: this.state.imei,
             minutes: minutes
         })

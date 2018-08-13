@@ -65,7 +65,8 @@ class App extends Component {
         //alert(minutes);
         axios.post('http://jingjing.fenglinfl.com/public/index.php/mosquitto/relay/test-enable', {
             imei: this.state.imei,
-            minutes: minutes
+            timeInterval: minutes,
+            timeUnits: 'm'
         })
             .then(function (response) {
                 this.setState({

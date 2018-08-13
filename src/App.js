@@ -63,7 +63,7 @@ class App extends Component {
         //alert(this.state.sim);
         //alert(this.state.imei);
         //alert(minutes);
-        axios.post('./index.php', {
+        axios.post('http://jingjing.fenglinfl.com/public/index.php/mosquitto/relay/test-enable', {
             imei: this.state.imei,
             minutes: minutes
         })
